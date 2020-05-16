@@ -40,10 +40,10 @@ def generar_aleatorio(n):
 
 
 def generar_mejor(n):
-        lista=[]
-        for i in range(1,n):
+	lista=[]
+	for i in range(1,n):
             lista+=[i]
-	    return lista
+	return lista
 
 
 def generar_peor(n):
