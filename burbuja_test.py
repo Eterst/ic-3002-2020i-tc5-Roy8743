@@ -46,19 +46,19 @@ def generar_mejor(n):
 	    return lista
 
 
-    def generar_peor(n):
-        lista=[]
-	    for i in range(1,n):
-		    lista[:0]+=[i]
-	    return lista
+def generar_peor(n):
+	lista=[]
+	for i in range(1,n):
+    		lista[:0]+=[i]
+    	return lista
 
 
-    def generar_promedio(n):
-	    lista=[]
-	    for i in range(1,n+1):
-		    lista+=[i]
-	    random.shuffle(lista)
-	    return lista
+def generar_promedio(n):
+	lista=[]
+    	for i in range(1,n+1):
+		lista+=[i]
+	random.shuffle(lista)
+	return lista
 
 
 
