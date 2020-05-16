@@ -80,7 +80,35 @@ class PruebasBurbuja(unittest.TestCase):
 
         self.assertLessEqual(fitted_o['times'][-1], fitted['times'][-1])
 
+        
 
+    def test_mejor_caso(n):
+        lista=[]
+        for i in range(1,n):
+            lista+=[i]
+	    return lista
+
+#a=test_mejor_caso(9)
+#print(a)
+
+    def test_peor_caso(n):
+        lista=[]
+	    for i in range(1,n):
+		    lista[:0]+=[i]
+	    return lista
+#b=test_peor_caso(9)
+#print(b)
+
+
+    def test_caso_promedio(n):
+	    lista=[]
+	    for i in range(1,n+1):
+		    lista+=[i]
+	    random.shuffle(lista)
+	    return lista
+        
+        
+"""        
     def test_mejor_caso(self):
         self.fail('Pendiente de implementar')
 
@@ -91,3 +119,4 @@ class PruebasBurbuja(unittest.TestCase):
 
     def test_caso_promedio(self):
         self.fail('Pendiente de implementar')
+"""
